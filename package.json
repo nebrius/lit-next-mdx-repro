@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@lit-labs/nextjs": "^0.2.4",
@@ -22,6 +23,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "prettier": "3.6.2",
+    "ts-lit-plugin": "^2.0.2",
     "typescript": "^5"
   }
 }
