@@ -1,11 +1,13 @@
 import type { NextConfig } from "next";
 
-import lit from "@lit-labs/nextjs";
+import createLit from "@lit-labs/nextjs";
+import createMdx from "@next/mdx";
 
-const withLit = lit();
+const withLit = createLit();
+const withMdx = createMdx();
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
 };
 
-export default withLit(nextConfig);
+export default withLit(withMdx(nextConfig));

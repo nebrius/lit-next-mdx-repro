@@ -1,12 +1,12 @@
-import React, { useState, DOMAttributes }  from 'react';
-import { SpkContainer } from "@/components/container/container";
+import React, { useState, DOMAttributes } from "react";
+import { SpkContainer } from "@/web-components/container/container";
 
 type CustomElement<T> = Partial<T & DOMAttributes<T> & { children: any }>;
 
-declare module 'react' {
+declare module "react" {
   namespace JSX {
     interface IntrinsicElements {
-      'spk-container': SpkContainerProps<SpkContainer>;
+      "spk-container": SpkContainerProps<SpkContainer>;
     }
   }
 }

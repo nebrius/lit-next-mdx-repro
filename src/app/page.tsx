@@ -1,12 +1,12 @@
 "use client";
 
 import styles from "./page.module.css";
-import "../components/wc";
+import { Container } from "@/components/container/container";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <spk-container name="World"></spk-container>
+      <Container name="World" />
     </div>
   );
 }
